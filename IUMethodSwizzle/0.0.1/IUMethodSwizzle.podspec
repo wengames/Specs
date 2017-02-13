@@ -3,11 +3,11 @@ Pod::Spec.new do |s|
   s.version          = "0.0.1"
   s.summary          = "method swizzling"
   
-  s.description      = “method swizzling safely in Obj-C”
+  s.description      = "method swizzling safely in Obj-C"
 
   s.homepage         = "https://github.com/wengames/IUMethodSwizzle"
   s.license          = 'MIT'
-  s.author           = { “liuhaiwen” => “455429974@qq.com" }
+  s.author           = { "liuhaiwen" => "455429974@qq.com" }
   s.source           = { :git => "https://github.com/wengames/IUMethodSwizzle.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'IUMethodSwizzle/*'
 
-  s.frameworks = “Foundation”
+  s.frameworks = "Foundation"
 end
