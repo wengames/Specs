@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'IUChain/*', 'IUChain/**/*', 'IUChain/**/**/*', 'IUChain/**/**/**/*'
+  s.source_files = 'IUChain/*', 'IUChain/**'
 
   s.frameworks = "UIKit"
   s.dependency 'IUMethodSwizzle'
