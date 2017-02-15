@@ -1,0 +1,228 @@
+{
+  "name": "IUKit",
+  "version": "0.0.1",
+  "summary": "IUKit",
+  "description": "IUKit in Obj-C",
+  "homepage": "https://github.com/wengames/IUKit",
+  "license": "MIT",
+  "authors": {
+    "liuhaiwen": "455429974@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/wengames/IUKit.git",
+    "tag": "0.0.1",
+    "submodules": true
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "IUKit/IUKit.h",
+  "subspecs": [
+    {
+      "name": "IUMethodSwizzling",
+      "source_files": "IUKit/IUMethodSwizzling/*",
+      "public_header_files": "IUKit/IUMethodSwizzling/*.h",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "IUChain",
+      "dependencies": {
+        "IUKit/IUMethodSwizzling": [
+
+        ]
+      },
+      "source_files": "IUKit/IUChain/*",
+      "public_header_files": "IUKit/IUChain/*.h",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "IUController",
+      "dependencies": {
+        "IUKit/IUMethodSwizzling": [
+
+        ]
+      },
+      "source_files": [
+        "IUKit/IUController/*",
+        "IUKit/IUController/**/*"
+      ],
+      "public_header_files": [
+        "IUKit/IUController/*.h",
+        "IUKit/IUController/**/*.h"
+      ],
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "IURouter",
+      "source_files": "IUKit/IURouter/*",
+      "public_header_files": "IUKit/IURouter/*.h",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "IUUtil",
+      "dependencies": {
+        "IUKit/IUMethodSwizzling": [
+
+        ]
+      },
+      "source_files": [
+        "IUKit/IUUtil/*",
+        "IUKit/IUUtil/**/*"
+      ],
+      "public_header_files": [
+        "IUKit/IUUtil/*.h",
+        "IUKit/IUUtil/**/*.h"
+      ],
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "IUTextInput",
+      "dependencies": {
+        "IUKit/IUMethodSwizzling": [
+
+        ]
+      },
+      "source_files": "IUKit/IUTextInput/*",
+      "public_header_files": "IUKit/IUTextInput/*.h",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "IUNetworking",
+      "dependencies": {
+        "IUKit/IUProtect": [
+
+        ],
+        "AFNetworking": [
+
+        ],
+        "MJExtension": [
+
+        ]
+      },
+      "source_files": "IUKit/IUNetworking/*",
+      "public_header_files": "IUKit/IUNetworking/*.h",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "IUProtect",
+      "source_files": "IUKit/IUProtect/*",
+      "public_header_files": "IUKit/IUProtect/*.h",
+      "frameworks": "Foundation"
+    }
+  ]
+}
+{
+  "name": "IUKit",
+  "version": "0.0.1",
+  "summary": "IUKit",
+  "description": "IUKit in Obj-C",
+  "homepage": "https://github.com/wengames/IUKit",
+  "license": "MIT",
+  "authors": {
+    "liuhaiwen": "455429974@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/wengames/IUKit.git",
+    "tag": "0.0.1",
+    "submodules": true
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "IUKit/IUKit.h",
+  "subspecs": [
+    {
+      "name": "IUMethodSwizzling",
+      "source_files": "IUKit/IUMethodSwizzling/*",
+      "public_header_files": "IUKit/IUMethodSwizzling/*.h",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "IUChain",
+      "dependencies": {
+        "IUKit/IUMethodSwizzling": [
+
+        ]
+      },
+      "source_files": "IUKit/IUChain/*",
+      "public_header_files": "IUKit/IUChain/*.h",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "IUController",
+      "dependencies": {
+        "IUKit/IUMethodSwizzling": [
+
+        ]
+      },
+      "source_files": [
+        "IUKit/IUController/*",
+        "IUKit/IUController/**/*"
+      ],
+      "public_header_files": [
+        "IUKit/IUController/*.h",
+        "IUKit/IUController/**/*.h"
+      ],
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "IURouter",
+      "source_files": "IUKit/IURouter/*",
+      "public_header_files": "IUKit/IURouter/*.h",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "IUUtil",
+      "dependencies": {
+        "IUKit/IUMethodSwizzling": [
+
+        ]
+      },
+      "source_files": [
+        "IUKit/IUUtil/*",
+        "IUKit/IUUtil/**/*"
+      ],
+      "public_header_files": [
+        "IUKit/IUUtil/*.h",
+        "IUKit/IUUtil/**/*.h"
+      ],
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "IUTextInput",
+      "dependencies": {
+        "IUKit/IUMethodSwizzling": [
+
+        ]
+      },
+      "source_files": "IUKit/IUTextInput/*",
+      "public_header_files": "IUKit/IUTextInput/*.h",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "IUNetworking",
+      "dependencies": {
+        "IUKit/IUProtect": [
+
+        ],
+        "AFNetworking": [
+          "~> 3.1.0"
+        ],
+        "MJExtension": [
+
+        ]
+      },
+      "source_files": "IUKit/IUNetworking/*",
+      "public_header_files": "IUKit/IUNetworking/*.h",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "IUProtect",
+      "source_files": "IUKit/IUProtect/*",
+      "public_header_files": "IUKit/IUProtect/*.h",
+      "frameworks": "Foundation"
+    }
+  ]
+}
