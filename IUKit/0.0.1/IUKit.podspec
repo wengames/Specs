@@ -49,4 +49,17 @@ Pod::Spec.new do |s|
       ss.public_header_files = 'IUKit/IUTextInput/*.h'
       ss.frameworks = "UIKit"
   end
+  s.subspec 'IUNetworking' do |ss|
+      ss.dependency 'IUKit/IUProtect'
+      ss.dependency 'AFNetworking'
+      ss.dependency 'MJExtension'
+      ss.source_files = 'IUKit/IUNetworking/*'
+      ss.public_header_files = 'IUKit/IUNetworking/*.h'
+      ss.frameworks = "Foundation"
+  end
+  s.subspec 'IUProtect' do |ss|
+      ss.source_files = 'IUKit/IUProtect/*'
+      ss.public_header_files = 'IUKit/IUProtect/*.h'
+      ss.frameworks = "Foundation"
+  end
 end
