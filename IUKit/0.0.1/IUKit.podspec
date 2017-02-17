@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'IUController' do |ss|
       ss.dependency 'IUKit/IUMethodSwizzling'
+      ss.dependency 'SDWebImage'
       ss.source_files = 'IUKit/IUController/*', 'IUKit/IUController/**/*'
       ss.public_header_files = 'IUKit/IUController/*.h', 'IUKit/IUController/**/*.h'
       ss.frameworks = "UIKit"
